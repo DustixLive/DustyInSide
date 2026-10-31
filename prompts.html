@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts — DustyInSide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span>Dusty</span>InSide</a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link" data-i18n="nav_home">Главная</a>
+        <a href="projects.html" class="nav-link" data-i18n="nav_projects">Проекты</a>
+        <a href="tools.html" class="nav-link" data-i18n="nav_tools">Инструменты</a>
+        <a href="prompts.html" class="nav-link active" data-i18n="nav_prompts">Промпты</a>
+        <a href="skills.html" class="nav-link" data-i18n="nav_skills">Навыки</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn lang-btn" id="lang-btn">EN</button>
+        <button class="icon-btn" id="theme-btn"><span id="theme-icon">🌙</span></button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-bottom:1.5rem;">
+      <div class="container">
+        <h1 data-i18n="section_prompts">Сборники промптов</h1>
+        <p data-i18n="section_prompts_sub">Готовые промпты для разных задач</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cards-grid">
+          <article class="card" data-modal='{"icon":"📝","title":"Prompt Pack #1","body":"Описание сборника промптов будет здесь.","link":"#"}'>
+            <div class="card-icon">📝</div>
+            <h3 class="card-title">Prompt Pack #1</h3>
+            <p class="card-desc" data-i18n="placeholder_desc">Контент будет добавлен позже</p>
+            <div class="card-tags"><span class="tag">Writing</span><span class="tag">ChatGPT</span></div>
+            <span class="card-link" data-i18n="more">Подробнее →</span>
+          </article>
+
+          <article class="card" data-modal='{"icon":"🎯","title":"Coding Prompts","body":"Описание будет добавлено позже.","link":"#"}'>
+            <div class="card-icon">🎯</div>
+            <h3 class="card-title">Coding Prompts</h3>
+            <p class="card-desc" data-i18n="placeholder_desc">Контент будет добавлен позже</p>
+            <div class="card-tags"><span class="tag">Code</span><span class="tag">Dev</span></div>
+            <span class="card-link" data-i18n="more">Подробнее →</span>
+          </article>
+
+          <div class="placeholder" style="grid-column: 1 / -1;">
+            <div class="placeholder-icon">🚧</div>
+            <p data-i18n="coming_soon">Скоро будет добавлено</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p data-i18n="footer_text">Сделано с ♥ · DustyInSide</p>
+      <p style="margin-top:0.5rem;"><a href="https://github.com/DustixLive/DustyInSide" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-icon">📂</div>
+      <h2 class="modal-title">Title</h2>
+      <div class="modal-body">Content</div>
+      <div class="modal-actions"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
