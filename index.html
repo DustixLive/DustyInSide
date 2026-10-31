@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DustyInSide — коллекция полезных инструментов, нейросетей, промптов и проектов" />
+  <title>DustyInSide</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span>Dusty</span>InSide
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link active" data-i18n="nav_home">Главная</a>
+        <a href="projects.html" class="nav-link" data-i18n="nav_projects">Проекты</a>
+        <a href="tools.html" class="nav-link" data-i18n="nav_tools">Инструменты</a>
+        <a href="prompts.html" class="nav-link" data-i18n="nav_prompts">Промпты</a>
+        <a href="skills.html" class="nav-link" data-i18n="nav_skills">Навыки</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn lang-btn" id="lang-btn" title="Switch language">EN</button>
+        <button class="icon-btn" id="theme-btn" title="Toggle theme">
+          <span id="theme-icon">🌙</span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1 data-i18n="hero_title">Коллекция полезных инструментов и проектов</h1>
+        <p data-i18n="hero_desc">Нейросети, софт, промпты, навыки и мои разработки — всё в одном месте.</p>
+      </div>
+    </section>
+
+    <!-- Projects Preview -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title" data-i18n="section_projects">Мои проекты</h2>
+            <p class="section-subtitle" data-i18n="section_projects_sub">Игры, программы и другие разработки</p>
+          </div>
+          <a href="projects.html" class="btn btn-secondary" data-i18n="more">Подробнее</a>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Placeholder cards -->
+          <article class="card" data-modal='{"icon":"🎮","title":"Project Placeholder","body":"Описание проекта будет добавлено позже. <br><br>Description will be added later.","link":"#"}'>
+            <div class="card-icon">🎮</div>
+            <h3 class="card-title">Project #1</h3>
+            <p class="card-desc" data-i18n="placeholder_desc">Контент будет добавлен позже</p>
+            <div class="card-tags">
+              <span class="tag">Game</span>
+              <span class="tag">Unity</span>
+            </div>
+            <span class="card-link" data-i18n="more">Подробнее →</span>
+          </article>
+
+          <article class="card" data-modal='{"icon":"💻","title":"App Placeholder","body":"Описание проекта будет добавлено позже.","link":"#"}'>
+            <div class="card-icon">💻</div>
+            <h3 class="card-title">Project #2</h3>
+            <p class="card-desc" data-i18n="placeholder_desc">Контент будет добавлен позже</p>
+            <div class="card-tags">
+              <span class="tag">Desktop</span>
+              <span class="tag">C#</span>
+            </div>
+            <span class="card-link" data-i18n="more">Подробнее →</span>
+          </article>
+
+          <article class="card" data-modal='{"icon":"📱","title":"Mobile Placeholder","body":"Описание проекта будет добавлено позже.","link":"#"}'>
+            <div class="card-icon">📱</div>
+            <h3 class="card-title">Project #3</h3>
+            <p class="card-desc" data-i18n="placeholder_desc">Контент будет добавлен позже</p>
+            <div class="card-tags">
+              <span class="tag">Mobile</span>
+              <span class="tag">Android</span>
+            </div>
+            <span class="card-link" data-i18n="more">Подробнее →</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools Preview -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title" data-i18n="section_tools">Инструменты и Нейросети</h2>
+            <p class="section-subtitle" data-i18n="section_tools_sub">Полезные сервисы и софт под разные задачи</p>
+          </div>
+          <a href="tools.html" class="btn btn-secondary" data-i18n="more">Подробнее</a>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card" data-modal='{"icon":"🤖","title":"AI Tool","body":"Описание инструмента будет добавлено позже.","link":"#"}'>
+            <div class="card-icon">🤖</div>
+            <h3 class="card-title">AI Tool #1</h3>
+            <p class="card-desc" data-i18n="placeholder_desc">Контент будет добавлен позже</p>
+            <div class="card-tags">
+              <span class="tag">AI</span>
+              <span class="tag">Chat</span>
+            </div>
+            <span class="card-link" data-i18n="more">Подробнее →</span>
+          </article>
+
+          <article class="card" data-modal='{"icon":"🛠️","title":"Utility","body":"Описание будет добавлено позже.","link":"#"}'>
+            <div class="card-icon">🛠️</div>
+            <h3 class="card-title">Utility #1</h3>
+            <p class="card-desc" data-i18n="placeholder_desc">Контент будет добавлен позже</p>
+            <div class="card-tags">
+              <span class="tag">Tool</span>
+            </div>
+            <span class="card-link" data-i18n="more">Подробнее →</span>
+          </article>
+
+          <article class="card" data-modal='{"icon":"🎨","title":"Design Tool","body":"Описание будет добавлено позже.","link":"#"}'>
+            <div class="card-icon">🎨</div>
+            <h3 class="card-title">Design Tool</h3>
+            <p class="card-desc" data-i18n="placeholder_desc">Контент будет добавлен позже</p>
+            <div class="card-tags">
+              <span class="tag">Design</span>
+              <span class="tag">AI</span>
+            </div>
+            <span class="card-link" data-i18n="more">Подробнее →</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prompts & Skills teaser -->
+    <section class="section">
+      <div class="container">
+        <div class="cards-grid">
+          <a href="prompts.html" class="card" style="text-decoration:none;">
+            <div class="card-icon">📝</div>
+            <h3 class="card-title" data-i18n="section_prompts">Сборники промптов</h3>
+            <p class="card-desc" data-i18n="section_prompts_sub">Готовые промпты для разных задач</p>
+            <span class="card-link" data-i18n="more">Подробнее →</span>
+          </a>
+
+          <a href="skills.html" class="card" style="text-decoration:none;">
+            <div class="card-icon">⚡</div>
+            <h3 class="card-title" data-i18n="section_skills">Навыки для НН</h3>
+            <p class="card-desc" data-i18n="section_skills_sub">Полезные скиллы и инструкции</p>
+            <span class="card-link" data-i18n="more">Подробнее →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p data-i18n="footer_text">Сделано с ♥ · DustyInSide</p>
+      <p style="margin-top:0.5rem;">
+        <a href="https://github.com/DustixLive/DustyInSide" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
+      <div class="modal-icon">📂</div>
+      <h2 class="modal-title">Title</h2>
+      <div class="modal-body">Content</div>
+      <div class="modal-actions"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
